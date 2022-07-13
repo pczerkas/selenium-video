@@ -16,7 +16,7 @@ selenium-video:
     image: pczerkas/selenium-video:1.0.0
     environment:
       - CONTROLLER_PORT=9000
-      - MAX_CPU_MINUTES=3
+      - MAX_MINUTES=3
     volumes:
       - ./some/path/to/videos:/videos
     healthcheck:
