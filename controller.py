@@ -4,6 +4,7 @@ import json
 import shlex
 import signal
 import subprocess
+import time
 import uuid
 
 controller_port = int(environ.get('CONTROLLER_PORT', 9000))
@@ -52,6 +53,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         pid = pids[video_id]
         kill(pid, signal.SIGINT)
         del pids[video_id]
+        time.sleep(3)
 
         self.wfile.write(json.dumps({'pid': pid}).encode('utf-8'))
 
