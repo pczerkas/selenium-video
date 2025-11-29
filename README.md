@@ -1,5 +1,6 @@
 # selenium-video
 Python selenium recording controller to be used with pczerkas/standalone-chrome-debug
+
 Docker image available at https://hub.docker.com/r/pczerkas/selenium-video
 
 Start recording:<br/>
