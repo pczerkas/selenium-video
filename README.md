@@ -1,5 +1,6 @@
 # selenium-video
 Python selenium recording controller to be used with pczerkas/standalone-chrome-debug
+Docker image available at https://hub.docker.com/r/pczerkas/selenium-video
 
 Start recording:<br/>
 video_id=$(curl -XPOST http://192.168.1.1:9000/start -d '{"host":"selenium","display":"99","file_name":"test.mp4"}' |jq -r '.video_id')
